@@ -83,7 +83,7 @@
   font-size: 1em; /* Adjust button font size if needed */
   text-decoration: none; /* Removes underline */
   transition: background-color 0.3s ease; /* Smooth background color transition */
-  margin-bottom: 0.5rem; /* Adjust the margin bottom as needed */
+  margin-bottom: 2rem; /* Adjust the margin bottom as needed */
 }
 
 .aboutLink:hover {
