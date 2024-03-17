@@ -3,56 +3,57 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
-    background: rgba(0, 0, 0, 0.5); /* Set a transparent black background */
+    height: 80vh; /* Reduced height */
+    background: rgba(0, 0, 0, 0.5);
     position: relative;
     z-index: 0;
-    margin-top: -30px; /* Adjust the margin to reduce the gap */
+    margin-top: -20px; /* Reduced margin */
     font-family: 'VT323', monospace;
 }
 
 .contentBox {
-    width: 80%; /* Increase the width of the content box */
-    min-height: 150px; /* Increase the minimum height */
-    padding: 3rem;
-    border-radius: 10px;
+    width: 70%; /* Reduced width */
+    min-height: 120px; /* Reduced height */
+    padding: 2rem; /* Reduced padding */
+    border-radius: 8px; /* Reduced border radius */
     border: 2px solid #ffffff;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     text-align: center;
     position: relative;
     z-index: 1;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: linear-gradient(135deg, #f5fefb, #023b02);
-    font-size: 1.3em; /* Increase the font size */
+    font-size: 1.1em; /* Reduced font size */
 }
 
 .contentBox:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(204, 1, 52, 0.794);
+    transform: translateY(-4px); /* Reduced transformation */
+    box-shadow: 0 12px 28px rgba(204, 1, 52, 0.794);
 }
 
 .contentBox h1 {
     margin: 0;
-    font-size: 2em;
-    margin-bottom: 0.3rem;
+    font-size: 1.75em; /* Reduced font size */
+    margin-bottom: 0.25rem; /* Reduced margin */
 }
 
 .contentBox p {
-    font-size: 1.5em;
-    margin-bottom: 1rem;
+    font-size: 1.25em; /* Reduced font size */
+    margin-bottom: 0.8rem; /* Reduced margin */
 }
 
 .contentBox a {
     display: inline-block;
-    padding: 0.75em 1.5em; /* Larger button */
-    background-color: #0f0f0f; /* Button background color */
-    color: white; /* Button text color */
-    border-radius: 8px; /* Rounded button */
-    font-size: 1em; /* Adjust button font size if needed */
-    text-decoration: none; /* Removes underline */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
-    margin-bottom: 2rem; /* Adjust the margin bottom as needed */
+    padding: 0.6em 1.2em; /* Reduced padding */
+    background-color: #0f0f0f;
+    color: white;
+    border-radius: 6px; /* Reduced border radius */
+    font-size: 0.9em; /* Reduced font size */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1.5rem; /* Reduced margin */
 }
 
 .contentBox a:hover {
-    background-color: #620f20;}
+    background-color: #620f20;
+}

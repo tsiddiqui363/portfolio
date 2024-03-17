@@ -1,109 +1,102 @@
 /* Projects.module.css */
 .projectTitle {
-    width: 100%; /* Make the title box full width */
-    padding: 1rem; /* Add some padding inside the title box */
-    text-align: center; /* Center the title text */
-    background: linear-gradient(
-      to right, 
-      #000000, /* Start with black */
-      #023b02  /* Transition to green */
-    ); /* Apply a gradient background */
-    color: #ffffff; /* Set the text color to white */
-    margin-bottom: 2rem; /* Add some space below the title box */
-    font-size: 2em; /* Set a larger font size for the title */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow for depth */
-  }
+  width: 100%;
+  padding: 0.75rem; /* Reduced padding */
+  text-align: center;
+  background: linear-gradient(to right, #000000, #023b02);
+  color: #ffffff;
+  margin-bottom: 1.5rem; /* Reduced margin */
+  font-size: 1.5em; /* Reduced font size */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
 
 .section {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 90vh;
-    background: rgba(0, 0, 0, 0.5); /* Transparent black background */
-    position: relative;
-    z-index: 0;
-    margin-top: -30px; /* Adjust the margin to reduce the gap */
-    font-family: 'VT323', monospace; /* Ensure you have imported this font */
-  }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80vh; /* Reduced height */
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 0;
+  margin-top: -20px; /* Reduced margin */
+  font-family: 'VT323', monospace;
+}
 
-  
-  /* Container for the project cards to manage layout */
-  .projectsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Adjust the gap as needed */
-  }
-  
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* Reduced gap */
+}
+
+.projectCard {
+  width: 70%; /* Reduced width */
+  min-height: 120px; /* Reduced height */
+  padding: 2rem; /* Reduced padding */
+  border-radius: 8px; /* Reduced border radius */
+  border: 2px solid #040404;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(135deg, #f5fefb, #023b02);
+  font-size: 1.1em; /* Reduced font size */
+  margin-bottom: 0.4rem; /* Reduced margin */
+}
+
+.largeCard {
+  flex: 0 0 55%; /* Adjusted size */
+}
+
+.smallCard {
+  flex: 0 0 25%; /* Adjusted size */
+}
+
+.projectCard:hover {
+  transform: translateY(-4px); /* Reduced transformation */
+  box-shadow: 0 12px 28px rgba(204, 1, 52, 0.794);
+}
+
+.projectCard h2 {
+  font-size: 1.75em; /* Reduced font size */
+  color: #000000;
+  margin-bottom: 0.25rem; /* Reduced margin */
+}
+
+.toolsList {
+  margin: 8px 0; /* Reduced margin */
+}
+
+.tool {
+  display: inline-block;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 4px; /* Reduced border radius */
+  padding: 4px 8px; /* Reduced padding */
+  margin: 4px; /* Reduced margin */
+  font-size: 0.75em; /* Reduced font size */
+  border: 1px solid #a2f0d2;
+}
+
+.repoLink {
+  display: inline-block;
+  padding: 0.6em 1.2em; /* Reduced padding */
+  background-color: #0f0f0f;
+  color: white;
+  border-radius: 6px; /* Reduced border radius */
+  font-size: 0.9em; /* Reduced font size */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1.5rem; /* Reduced margin */
+}
+
+.repoLink:hover {
+  background-color: #620f20;
+}
+
+@media (min-width: 768px) {
   .projectCard {
-    width: 80%;
-    min-height: 150px;
-    padding: 3rem;
-    border-radius: 10px;
-    border: 2px solid #040404;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background: linear-gradient(135deg, #f5fefb, #023b02); /* Green gradient background */
-    font-size: 1.3em;
-    margin-bottom: 0.5rem; /* Set a standard bottom margin */
+    width: 50%; /* Further reduced width for larger screens */
   }
-
-  .largeCard {
-    flex: 0 0 60%; /* larger card taking up more space */
-  }
-  
-  .smallCard {
-    flex: 0 0 30%; /* smaller card taking up less space */
-  }
-  
-  .projectCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(204, 1, 52, 0.794);
-  }
-  
-  .projectCard h2 {
-    font-size: 2em; /* Title font size */
-    color: #000000; /* Title color */
-    margin-bottom: 0.3rem;
-  }
-  
-  .toolsList {
-    margin: 10px 0;
-  }
-  
-  .tool {
-    display: inline-block;
-    background: #ffffff;
-    color: #000000;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin: 5px;
-    font-size: 0.85em;
-    border: 1px solid #a2f0d2;
-  }
-  
-  .repoLink {
-    display: inline-block;
-    padding: 0.75em 1.5em;
-    background-color: #0f0f0f;
-    color: white;
-    border-radius: 8px;
-    font-size: 1em;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    margin-bottom: 2rem;
-  }
-  
-  .repoLink:hover {
-    background-color: #620f20;
-  }
-  
-  @media (min-width: 768px) {
-    .projectCard {
-      width: 60%; /* Adjust card width for larger screens */
-    }
-  }
-  
+}
