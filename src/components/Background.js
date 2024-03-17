@@ -39,7 +39,6 @@ const Background = () => {
     useEffect(() => {
         const sketch = (p) => {
             let charSize = 35;
-            let fallRate = charSize / 2;
             let streams = [];
 
             class Char {
@@ -49,7 +48,7 @@ const Background = () => {
                     this.y = y;
                     this.speed = speed;
                 }
-
+            
                 draw() {
                     let distance = p.dist(p.mouseX, p.mouseY, this.x, this.y);
                     let opacity = p.map(distance, 0, 200, 255, 0);
