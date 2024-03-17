@@ -7,7 +7,7 @@ export const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">My Portfolio</div>
+      <div className="logo">Tanaya Siddiqui's Portfolio</div>
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
         {/* Icon for menu (e.g., hamburger icon) */}
       </div>

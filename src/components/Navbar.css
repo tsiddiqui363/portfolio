@@ -1,48 +1,51 @@
 /* Navbar.css */
 .navbar {
-    background: #002107;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-  
-  .logo {
-    cursor: pointer;
-  }
-  
-  .menu-icon {
-    /* Styling for your menu icon... */
-    cursor: pointer;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-links li {
-    padding: 0 20px;
-  }
-  
-  .nav-links li a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .nav-links li a:hover {
-    color: #005126;
-  }
-  
-  /* Responsive nav links or hamburger menu styling... */
-  
-  .nav-links.open {
-    /* Specific styles for when the menu is open (for mobile) */
-  }
-  
+  background: #002107;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-family: 'VT323', monospace;
+}
+
+.logo {
+  cursor: pointer;
+  font-weight: 700; /* Make the logo bold */
+}
+
+.menu-icon {
+  /* Styling for your menu icon... */
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  padding: 0 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500; /* Medium weight for the links */
+}
+
+.nav-links li a:hover {
+  color: #ec0c0c;
+  text-decoration: underline; /* Add underline on hover for emphasis */
+}
+
+/* Responsive nav links or hamburger menu styling... */
+
+.nav-links.open {
+  /* Specific styles for when the menu is open (for mobile) */
+}
