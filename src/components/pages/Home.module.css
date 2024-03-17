@@ -1,0 +1,74 @@
+
+/* Home.module.css */
+.profilePicContainer {
+  width: 200px; /* Set the desired size of your profile image */
+  height: 200px; /* This should be equal to the width for a circle */
+  border-radius: 50%; /* This will make it round */
+  overflow: hidden; /* This will clip the image to the boundary of the border-radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px; /* Adjust space between the image and the content box */
+  z-index: 2;
+  position: relative; /* Ensures the stacking context for z-index */
+  align-self: center; /* This will center the container in the flex parent */
+}
+
+.profilePic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container without stretching */
+}
+
+.homeSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+  color: #333;
+  text-align: center; /* Center align the text for all child elements */
+}
+
+.contentBox {
+  margin-top: -64px;
+  width: 80%; /* You can adjust the width to your preference */
+  background-color: #a2f0d2;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.contentBox h1 {
+  margin: 0;
+  font-size: 3em; /* Larger font size */
+  margin-bottom: 0.5rem; /* Adjust spacing */
+}
+
+.contentBox h2 {
+  font-size: 2em; /* Larger font size */
+  opacity: 0.8; /* Slightly transparent for visual hierarchy */
+  margin-bottom: 1rem; /* Adjust spacing */
+}
+
+.contentBox p {
+  font-size: 1.2em; /* Slightly larger font size */
+  margin-bottom: 2rem; /* Adjust spacing */
+}
+
+.aboutLink {
+  display: inline-block;
+  padding: 0.75em 1.5em; /* Larger button */
+  background-color: #333; /* Button background color */
+  color: white; /* Button text color */
+  border-radius: 8px; /* Rounded button */
+  font-size: 1em; /* Adjust button font size if needed */
+  text-decoration: none; /* Removes underline */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.aboutLink:hover {
+  background-color: #555; /* Button hover state */
+}
