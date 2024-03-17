@@ -12,4 +12,15 @@
   padding: 4rem 0;
 }
 
+/* App.css */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Ensure it's behind other content */
+  /* Add any additional styling you want for the background */
+}
+
 /* Additional global styles... */

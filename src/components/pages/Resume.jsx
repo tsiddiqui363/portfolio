@@ -1,18 +1,20 @@
 import React from 'react';
-import { Link } from 'react-scroll'; // Import Link from react-scroll
+import resume from '../../assets/images/resume.jpg'; // Make sure the path is correct
+import resumePDF from '../../assets/Resume.pdf'; // Make sure the path is correct
+import styles from './Resume.module.css';
 
 const Resume = () => {
   return (
-    <div id="resume" className="section"> {/* Ensure this id matches the one used in your Navbar */}
-      <h1>Resume</h1>
-      <p>This is the Resume page. You can view and download my resume here.</p>
-      {/* Replace the react-router-dom Link with react-scroll Link */}
-      <Link to="home" smooth={true} duration={500}>Back to Home</Link>
-      {/* You can also include a download link for your resume here */}
-      {/* <a href="/path_to_resume.pdf" download="My_Resume.pdf">Download Resume</a> */}
+    <div id="resume" className={styles.section}>
+      <h1 className={styles.resumeTitle}>My Resume</h1>
+      <div className={styles.resumeContent}>
+        <img src={resume} alt="Resume" className={styles.resumeImage} />
+        <a href={resumePDF} download="Tanaya_Siddiqui_Resume.pdf" className={styles.downloadLink}>
+          Download PDF
+        </a>
+      </div>
     </div>
   );
 };
 
 export default Resume;
-

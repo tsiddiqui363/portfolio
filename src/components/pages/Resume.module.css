@@ -1,0 +1,53 @@
+/* Resume.module.css */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.resumeTitle {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  background: linear-gradient(to right, #000000, #023b02);
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-size: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resumeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resumeImage {
+  max-width: 600px; /* Adjust to suit your layout */
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.downloadLink {
+  padding: 0.75em 1.5em;
+  background-color: #0f0f0f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.downloadLink:hover {
+  background-color: #620f20;
+  transform: translateY(-3px);
+}

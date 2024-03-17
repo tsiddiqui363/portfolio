@@ -1,14 +1,16 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import Background from './components/Background';
-import { Home, About, Projects, Resume, ContactMe } from './components/pages';
+import { Home, About, Projects, Resume, Socials} from './components/pages';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Background />
+      <div className="background">
+        <Background />
+      </div>
       <div id="home" className="section">
         <Home />
       </div>
@@ -21,8 +23,8 @@ function App() {
       <div id="resume" className="section">
         <Resume />
       </div>
-      <div id="contact" className="section">
-        <ContactMe />
+      <div id="socials" className="section">
+        <Socials />
       </div>
     </div>
   );

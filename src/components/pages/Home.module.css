@@ -1,15 +1,21 @@
 
 /* Home.module.css */
 .profilePicContainer {
-  width: 200px; /* Set the desired size of your profile image */
-  height: 200px; /* This should be equal to the width for a circle */
+  width: 500px; /* Set the desired size of your profile image */
+  height: 500px; /* This should be equal to the width for a circle */
   border-radius: 50%; /* This will make it round */
   overflow: hidden; /* This will clip the image to the boundary of the border-radius */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  margin-bottom: 20px; /* Adjust space between the image and the content box */
+  margin-bottom: 100px; /* Adjust space between the image and the content box */
   z-index: 2;
   position: relative; /* Ensures the stacking context for z-index */
   align-self: center; /* This will center the container in the flex parent */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+}
+
+.profilePicContainer:hover {
+  transform: scale(1.1); /* Slightly increase the size of the container */
+  box-shadow: 0 12px 24px rgba(95, 1, 1, 0.794);; /* Slightly increase the shadow size */
 }
 
 .profilePic {
@@ -25,20 +31,30 @@
   align-items: center;
   height: 100vh;
   padding: 2rem;
-  color: #333;
+  color: #000000;
   text-align: center; /* Center align the text for all child elements */
+  font-family: 'VT323', monospace;
 }
 
 .contentBox {
   margin-top: -64px;
-  width: 80%; /* You can adjust the width to your preference */
-  background-color: #a2f0d2;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  background: linear-gradient(135deg, #f5fefb, #023b02);
+  min-height: 100px; /* minimum height for the content box */
+  padding: 3rem;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   text-align: center;
   position: relative;
   z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: float 6s ease-in-out infinite;
+}
+
+.contentBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(204, 1, 52, 0.794);
 }
 
 .contentBox h1 {
@@ -50,25 +66,27 @@
 .contentBox h2 {
   font-size: 2em; /* Larger font size */
   opacity: 0.8; /* Slightly transparent for visual hierarchy */
-  margin-bottom: 1rem; /* Adjust spacing */
+  margin-bottom: 0.5rem; /* Adjust spacing */
 }
 
 .contentBox p {
-  font-size: 1.2em; /* Slightly larger font size */
-  margin-bottom: 2rem; /* Adjust spacing */
+  font-size: 1.5em; /* Slightly larger font size */
+  margin-bottom: 1rem; /* Adjust spacing */
 }
 
 .aboutLink {
   display: inline-block;
   padding: 0.75em 1.5em; /* Larger button */
-  background-color: #333; /* Button background color */
+  background-color: #0f0f0f; /* Button background color */
   color: white; /* Button text color */
   border-radius: 8px; /* Rounded button */
   font-size: 1em; /* Adjust button font size if needed */
   text-decoration: none; /* Removes underline */
   transition: background-color 0.3s ease; /* Smooth background color transition */
+  margin-bottom: 0.5rem; /* Adjust the margin bottom as needed */
 }
 
 .aboutLink:hover {
-  background-color: #555; /* Button hover state */
+  background-color: #620f20; /* Button hover state */
 }
+
