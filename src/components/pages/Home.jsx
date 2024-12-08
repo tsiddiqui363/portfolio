@@ -11,7 +11,6 @@ export const Home = () => {
       </div>
       <div className={styles.contentBox}>
         <h1>Tanaya Siddiqui</h1>
-        <h2>Front-end Developer</h2>
         <p>Passionate in web development and enthusiastic about game development, possessing skills in Python, C, JavaScript, HTML, CSS, and React. Continuously expanding knowledge in C++ and Unreal Engine to create immersive gaming experiences.</p>
         <Link to="about" className={styles.aboutLink} smooth={true} duration={500}>Go to About</Link>
       </div>
